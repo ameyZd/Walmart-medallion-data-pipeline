@@ -211,10 +211,3 @@ For a portfolio demo, capture these screenshots or short clips:
 - S3 bucket customer reviews file
 - Gold schema table preview, especially `fact_orders`
 
-## Status
-
-This is a learning and portfolio project. Credentials, warehouse IDs, Databricks hostnames, job IDs, and S3 locations should be replaced with your own values before running.
-
-## Credits
-
-Built by following and extending a YouTube tutorial, then adapted into a portfolio-ready medallion data engineering project with Airflow orchestration and S3 ingestion.
