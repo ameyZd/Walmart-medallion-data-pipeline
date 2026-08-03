@@ -14,22 +14,7 @@ The project follows a medallion architecture: raw operational data from a forked
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    A[GhostDB agentic source fork] --> B[Databricks ingestion pipeline]
-    C[AWS S3 customer reviews] --> D[Databricks external location]
-    B --> E[Bronze schema]
-    D --> E
-    E --> F[dbt silver technical models]
-    F --> G[dbt silver business OBT]
-    G --> H[dbt snapshots and ephemeral models]
-    H --> I[Gold fact and dimension models]
-    J[Airflow on Docker] --> B
-    J --> F
-    J --> G
-    J --> H
-    J --> I
-```
+<img width="2200" height="1117" alt="Walmart_Project_architecture (1)" src="https://github.com/user-attachments/assets/76803643-b01d-4971-abb6-fcdf844fc8bd" />
 
 ## Tech Stack
 
