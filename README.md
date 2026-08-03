@@ -14,7 +14,9 @@ The project follows a medallion architecture: raw operational data from a forked
 
 ## Architecture
 
-<img width="1669" height="867" alt="Walmart_Project_architecture" src="https://github.com/user-attachments/assets/2dd1eca6-e2bf-4697-a602-3765cd691f29" />
+![Walmart medallion data pipeline architecture](docs/assets/walmart-medallion-architecture.png)
+
+The diagram shows the end-to-end flow: GhostDB and AWS S3 act as source systems, Databricks stores the bronze, silver, and gold layers inside the `walmart` catalog, dbt handles modeling and quality checks, and Airflow orchestrates the full pipeline.
 
 ## Tech Stack
 
@@ -189,6 +191,7 @@ docker compose up --build -d
 For a portfolio demo, capture these screenshots or short clips:
 
 - Databricks `walmart` catalog with bronze, silver, and gold schemas
+- Architecture diagram from `docs/assets/walmart-medallion-architecture.png`
 - Databricks pipeline/job run for source ingestion
 - dbt lineage graph or successful dbt run output
 - Airflow DAG graph view showing task order
