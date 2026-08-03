@@ -14,7 +14,7 @@ The project follows a medallion architecture: raw operational data from a forked
 
 ## Architecture
 
-<img width="2200" height="1117" alt="Walmart_Project_architecture (1)" src="https://github.com/user-attachments/assets/76803643-b01d-4971-abb6-fcdf844fc8bd" />
+<img width="1669" height="867" alt="Walmart_Project_architecture" src="https://github.com/user-attachments/assets/2dd1eca6-e2bf-4697-a602-3765cd691f29" />
 
 ## Tech Stack
 
