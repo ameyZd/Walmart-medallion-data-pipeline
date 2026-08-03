@@ -4,6 +4,10 @@ This project builds a Walmart-style retail analytics pipeline using GhostDB as a
 
 The project follows a medallion architecture: raw operational data from a forked GhostDB source lands in Databricks bronze tables, dbt transforms it into technical and business silver layers, and gold models expose analytics-ready dimension and fact tables. Airflow orchestrates the end-to-end flow, including a Databricks ingestion job and dbt model execution.
 
+## Demo Walkthrough
+
+Watch the full project walkthrough here: [Demo Video](https://drive.google.com/file/d/1zA7dmyGNz9RayKZDdnEIcCMVSvps5EKo/view?usp=sharing)
+
 ## Project Story
 
 - A forked GhostDB agentic database is used as a safe source system copy, so experiments do not accidentally delete or update the main production database.
