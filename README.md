@@ -180,26 +180,4 @@ docker compose down
 docker compose up --build -d
 ```
 
-## Key Learning Outcomes
-
-- Designing a medallion architecture across bronze, silver, and gold layers
-- Connecting dbt to Databricks through a SQL Warehouse
-- Building metadata-driven dbt models with Jinja
-- Using snapshots for dimension history
-- Orchestrating Databricks and dbt work with Airflow
-- Extending a warehouse pipeline with S3 data lake files
-- Running Airflow with a custom Docker image when extra packages are required
-
-## Demo Assets To Capture
-
-For a portfolio demo, capture these screenshots or short clips:
-
-- Databricks `walmart` catalog with bronze, silver, and gold schemas
-- Architecture diagram from `docs/assets/walmart-medallion-architecture.png`
-- Databricks pipeline/job run for source ingestion
-- dbt lineage graph or successful dbt run output
-- Airflow DAG graph view showing task order
-- Airflow successful DAG run logs
-- S3 bucket customer reviews file
-- Gold schema table preview, especially `fact_orders`
 
